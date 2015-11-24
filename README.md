@@ -13,7 +13,7 @@ To decode information, use the GrammarReader class, passing the grammar file and
 ```That wrathful cloud, gazing at itself in the light rain in the light rain, hanging.```
 in a file called 'test.in'.
 Then to decode it you would use:
-```java GrammarReade poetry.gram test.in```
+```java GrammarReader poetry.gram test.in```
 and it would output:
 ```
 Input: 'That wrathful cloud, gazing at itself in the light rain in the light rain, hanging.'
@@ -23,11 +23,13 @@ Input: 'That wrathful cloud, gazing at itself in the light rain in the light rai
 ## Making a Grammar
 There is a certain structure necessary for a grammar passed as input to one of the tools.
 Firstly, each grammar consists of any number of _decisions_. These can also be called productions, if you're familiar with the normal terminology for grammars. Each grammar consists of 1 or more _paths_, each on a separate line. The syntax for a decision looks like:
-```<decision-name> {
+```
+<decision-name> {
   <path-1>
   ...
   <path-n>
-}```
+}
+```
 
 Based on the encoded information, a path is chosen and used to generate text. Each _path_ consists of a mixture of plain text and more _decisions_. In this context, these _decisions_ are called _uses_. If you need to escape a character in the text of a _path_ (e.g. '{', '}', '[', or ']') put a slash before it. A "\\" is read as "\" and a "\n" is read as a newline. If you want to continue a path onto the next line, a '\' followed by a newline will continue the path onto the next line. Because whitespace is ignored at the beginning of the line a path is on, if you want to start a path with a whitespace character other than newline, you should precede that character with a '\'.
 
