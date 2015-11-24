@@ -17,7 +17,8 @@ Then to decode it you would use:
 and it would output:
 ```
 Input: 'That wrathful cloud, gazing at itself in the light rain in the light rain, hanging.'
-101011101110000000000000000```
+101011101110000000000000000
+```
 
 ## Making a Grammar
 There is a certain structure necessary for a grammar passed as input to one of the tools.
@@ -54,7 +55,9 @@ name {
 }
 ```
 This can produce output like:
-``` String[] foo;
+```
+String[] foo;
+
 ```
 
 Additionally, there is another kind of decision, called an _accumulating decision_, which is denoted by preceding the body of the decision with a '+'. This represents that each path really consists of all of the previous uses followed by the use listed on the path.
