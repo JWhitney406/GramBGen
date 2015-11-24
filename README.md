@@ -109,6 +109,8 @@ This is because the decoder would see "Here is some text: applebobber", and, upo
 # References + More Information
 Inspiration for this set of tools came from the fantastic book, Disappearing Cryptography, by Peter Wayner, and several similar kinds of ideas implemented on the net.
 
-[Disappearing Cryptography](http://www.amazon.com/Disappearing-Cryptography-Third-Edition-Steganography/dp/0123744792)
-[SCIGen](https://pdos.csail.mit.edu/archive/scigen/): mimics computer science papers to encode information
-[spammimmic](http://www.spammimic.com/): mimics spam emails to encode information
+[Disappearing Cryptography](http://www.amazon.com/Disappearing-Cryptography-Third-Edition-Steganography/dp/0123744792): a book that covers mimicry and other techniques in steganography in-depth; highly-recommended
+
+[SCIGen](https://pdos.csail.mit.edu/archive/scigen/): a website that mimics computer science papers to encode information
+
+[spammimmic](http://www.spammimic.com/): a website that mimics spam emails to encode information
