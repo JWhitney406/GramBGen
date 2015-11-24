@@ -105,3 +105,10 @@ problem {
 ```
 This is because the decoder would see "Here is some text: applebobber", and, upon seeing the 'bob', it would assume that the 2nd path was took, when it really wasn't. This specific case could technically be considered a limitation of the reader, however, if we replace 'bobber' with 'bob' then there is definitely an ambiguity problem. It's probably good practice to avoid these kinds of situations to begin with.
 * There should be no infinite loops between decisions. Some looping is alright as long as it eventually stops.
+
+# References + More Information
+Inspiration for this set of tools came from the fantastic book, Disappearing Cryptography, by Peter Wayner, and several similar kinds of ideas implemented on the net.
+
+[Disappearing Cryptography](http://www.amazon.com/Disappearing-Cryptography-Third-Edition-Steganography/dp/0123744792)
+[SCIGen](https://pdos.csail.mit.edu/archive/scigen/): mimics computer science papers to encode information
+[spammimmic](http://www.spammimic.com/): mimics spam emails to encode information
