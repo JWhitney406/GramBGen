@@ -1,24 +1,29 @@
 start {
-  [identifier], [participlePhrase], [participlePhrase]. 
+[identifier], [participlePhrase], [participlePhrase].\n\
+[topicAdjective], [topicAdjective] [use noun], [participlePhrase].\n\
+Like [pluralNoun] [participle] [singlePrep] [pluralNoun].\n\
+But [use adj] [use noun], [question]?\n\n
 }
+
 
 identifier {
-  It is the [topic]
-  Alas. The [topic]
-  Woe be to the [topic]
-  O [topic]
-  Do you remember the [topic]
-  That [topic]
-  A [topic]
-  Last came the [topic]
-  There once was the [topic]
+  It is the [subject = topic]
+  Alas. The [subject = topic]
+  Woe be to the [subject = topic]
+  O [subject = topic]
+  Do you remember the [subject = topic]
+  That [subject = topic]  
+  A [subject = topic]
+  Last came the [subject = topic]
+  There once was the [subject = topic]
 }
+
 
 topic {
-  [topicAdjective] [topicNoun]
+  [adj =  topicAdjective] [noun = topicNoun]
 }
 
-topicAdjective {
+topicAdjective {  
   gloomy
   wrathful
   upside-down
@@ -33,6 +38,33 @@ topicNoun {
   tree
   cloud
   child
+}
+
+question {
+  what did you do
+  where did you go
+  what happened to you
+  how could you
+  who are you
+  how long has it been since you were a part of me
+}
+
+pluralNoun {
+  shadows
+  spiders
+  eyes
+  chairs
+  chains
+  hair
+}
+
+singlePrep {
+  among
+  beyond
+  behind
+  beneath
+  inside
+  underneath
 }
 
 participlePhrase +{
@@ -58,6 +90,7 @@ prepPhrase {
   at [time]
   next to the [place]
   outside of the [place]
+
 }
 
 weather {
@@ -80,6 +113,7 @@ time {
   dusk
   twilight
   four o'clock in the morning
+
 }
 
 place {

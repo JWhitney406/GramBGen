@@ -1,0 +1,93 @@
+start {
+  [identifier], [participlePhrase], [participlePhrase]. 
+}
+
+identifier {
+  It is the [topic]
+  Alas. The [topic]
+  Woe be to the [topic]
+  O [topic]
+  Do you remember the [topic]
+  That [topic]
+  A [topic]
+  Last came the [topic]
+  There once was the [topic]
+}
+
+topic {
+  [topicAdjective] [topicNoun]
+}
+
+topicAdjective {
+  gloomy
+  wrathful
+  upside-down
+  glossy
+  gluttonous
+}
+
+topicNoun {
+  train
+  mountain goat
+  dog
+  tree
+  cloud
+  child
+}
+
+participlePhrase +{
+  [participle]
+  \ [prepPhrase]
+  \ [prepPhrase]
+}
+
+participle {
+  hanging
+  dangling
+  bought
+  abandoned
+  gazing at itself
+  dying
+  wailing
+  trampled
+  about to dream
+}
+
+prepPhrase {
+  in the [weather]
+  at [time]
+  next to the [place]
+  outside of the [place]
+}
+
+weather {
+  light rain
+  heavy rain
+  blinding snow
+  fluffy snow
+  scorching heat
+  howling winds
+  calm sunlight
+  unrelenting hail
+}
+
+time {
+  midnight
+  daybreak
+  dawn
+  morning's light
+  sunrise
+  dusk
+  twilight
+  four o'clock in the morning
+}
+
+place {
+  old diner
+  water hole
+  cozy shack
+  mines
+  dog park
+  radio tower
+  bar
+}
